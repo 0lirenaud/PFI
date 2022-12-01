@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.menus {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    height: 50px;
+    width: 100%;
+}
+
+.icon {
+    font-size:28px !important;
+    cursor: pointer;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
+    -webkit-text-fill-color: white;
+    margin:auto;
+}
+
+.menuText {
+    font-size: 1em;
+    cursor: pointer;
+    display: none;
+    font-family: "Montserrat";
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 35px auto;
+    color: white;
+    align-items: center;
+    text-decoration: none;
+    margin:auto;
+}
+
+.menu:hover,
+.menu:hover .icon {
+    color: rgb(39, 161, 231);
+    -webkit-text-fill-color: rgb(39, 161, 231);
+}
+
+.menu:active,
+.menu:active .icon {
+    color: dodgerblue;
+    -webkit-text-fill-color: dodgerblue;
+    -webkit-text-stroke-color: black;
+}
+
+.selected,
+.selected .icon {
+    color: rgb(253, 198, 46);
+    -webkit-text-fill-color: rgb(253, 198, 46);
+}
+
+.menuBuffer {
+    height: 50px;
+}
+
+@media screen and (min-width:1200px) {
+    .menuText {
+        display: block;
+    }
+    .menu {
+        margin:0 10px;
+    }
+    .menu:nth-child(2) {
+        margin-left: auto;
+    }
+    .menu:last-child{
+        margin-right:auto;
+    }
+    .menus {
+        background-color:rgba(0, 0, 0, 0.505);
+        height: 60px;
+    }
+    .menuBuffer {
+        height: 0;
+    }
+    
+}
