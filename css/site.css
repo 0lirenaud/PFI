@@ -25,6 +25,10 @@
     background-image: url("../images/ifsc.jpg");
 }
 
+.diaporama {
+    background-image: url("../images/bouldercomp.jpg");
+}
+
 .bloc {
     background-image: url("../images/bloc.jpeg");
 }
@@ -52,7 +56,7 @@
 }
 
 .siteIcon {
-    background-image: URL('../images/faviconBig.png');
+    background-image: URL('../images/favicon.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -70,6 +74,7 @@
     text-align:center;
     color: rgb(253, 198, 46);
     font-size: 40px;
+    margin: 10px;
 }
 
 .content {
@@ -99,9 +104,22 @@
     flex-wrap: wrap;
 }
 
+audio {
+    display: flex;
+    align-self: center;
+    width: 50%;
+    margin: 20px auto 20px auto;
+}
+
 .description {
     margin: auto;
     margin-top: 0;
+    width: 100%;
+}
+
+.description h2 {
+    text-align: center;
+    color:rgb(50, 50, 50);
 }
 
 .auteur {
@@ -141,6 +159,8 @@
 
 .image img{
     width: 50%;
+    border-radius: 10px;
+    border: 5px solid rgb(50, 50, 50);
 }
 
 .footer {
@@ -166,6 +186,9 @@
         border: 10px solid rgb(50, 50, 50);
         margin: 0 50px;
     }
+    .description {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width:1200px) {
@@ -173,10 +196,12 @@
         height: 500px;
     }
 }
-
-@media screen and (max-width:600px) {
+@media screen and (max-width:800px) {
     .headerTitle {
         font-size: 40px;
     }
+}
+
+@media screen and (max-width:600px) {
     iframe{height: 300px;}
 }

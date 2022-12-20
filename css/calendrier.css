@@ -3,12 +3,6 @@ body {
     background-color: rgb(14, 65, 109);
 }
 
-.menuBuffer {
-    height: 50px;
-    background-color: white;
-    margin: 0 50px;
-}
-
 .content {
     padding: 20px;
 }
